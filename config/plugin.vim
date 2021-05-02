@@ -9,5 +9,5 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-" Set colorscheme theme
+" Load colorscheme theme
 colorscheme dracula
