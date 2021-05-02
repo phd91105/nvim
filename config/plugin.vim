@@ -6,4 +6,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'dracula/vim'
   Plug 'wakatime/vim-wakatime'
+
 call plug#end()
+syntax enable
+colorscheme dracula

@@ -50,6 +50,4 @@ set clipboard=unnamed
 
 set lazyredraw
 set termguicolors
-
-colorscheme dracula
 filetype plugin indent on
