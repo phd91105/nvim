@@ -22,3 +22,6 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 nnoremap <C-q> :q<CR>
+
+" Remove highlight
+map <C-h> :nohl<CR>
