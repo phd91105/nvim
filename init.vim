@@ -94,6 +94,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Use `mk` and `ml` to navigate diagnostics
+nmap mk <Plug>(coc-diagnostic-prev)
+nmap ml <Plug>(coc-diagnostic-next)
+
 " NERD tree configuration
 noremap <C-b> :NERDTreeToggle<CR>
 nnoremap F :NERDTreeFind<CR>
