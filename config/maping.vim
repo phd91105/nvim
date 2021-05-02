@@ -24,4 +24,9 @@ nnoremap <C-l> <C-W>l
 nnoremap <C-q> :q<CR>
 
 " Remove highlight
-map <C-h> :nohl<CR>
+map <C-n> :nohl<CR>
+
+" fzf
+noremap ` :Files<CR>
+noremap ; :Buffers<CR>
+
