@@ -42,9 +42,3 @@ let g:lightline = {
       \   'cocstatus': 'coc#status'
       \ },
       \ }
-
-"DEOPLETE {{
-let g:python3_host_prog= '/usr/local/opt/python@3.8/bin/python3'
-let g:python_host_prog= '/usr/bin/python2'
-"}}
-
