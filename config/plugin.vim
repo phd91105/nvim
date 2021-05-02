@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'dracula/vim'
   Plug 'wakatime/vim-wakatime'
-
+"  Plug 'vimsence/vimsence'
 call plug#end()
 
 " Load colorscheme theme
