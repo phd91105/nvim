@@ -46,6 +46,5 @@ let g:lightline = {
 "DEOPLETE {{
 let g:python3_host_prog= '/usr/local/opt/python@3.8/bin/python3'
 let g:python_host_prog= '/usr/bin/python2'
-"let g:deoplete#enable_at_startup = 1
-"let g:ale_completion_enabled = 1
 "}}
+
