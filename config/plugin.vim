@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'wakatime/vim-wakatime'
   Plug 'junegunn/fzf.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'preservim/nerdcommenter'
   "  Plug 'vimsence/vimsence'
 call plug#end()
 

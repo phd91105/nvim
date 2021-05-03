@@ -27,6 +27,13 @@ nnoremap <C-q> :q<CR>
 map <C-n> :nohl<CR>
 
 " fzf
-noremap ` :Files<CR>
+noremap ` :GFiles<CR>
 noremap ; :Buffers<CR>
 
+nnoremap <Leader>\ :vsplit<CR>
+nnoremap <Leader>/ :split<CR>
+
+" bind \ (backward slash) to grep shortcut
+nnoremap K :Ag <C-R><C-W><CR>
+nnoremap <C-k> /<C-R><C-W><CR>
+nnoremap \ :Ag<SPACE>
