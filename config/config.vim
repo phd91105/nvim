@@ -10,7 +10,7 @@ set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
-
+set encoding=UTF-8
 set autoindent
 set smartindent
 

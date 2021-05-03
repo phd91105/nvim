@@ -52,3 +52,6 @@ noremap Y :bprevious<CR>
 " Save file
 noremap <C-s> :w<CR>
 
+" CocCommand
+noremap <leader>. :CocCommand eslint.showOutputChannel<CR>
+

@@ -10,6 +10,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdcommenter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   "  Plug 'vimsence/vimsence'
 call plug#end()
 
