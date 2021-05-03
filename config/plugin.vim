@@ -13,3 +13,4 @@ call plug#end()
 
 " Load colorscheme theme
 colorscheme dracula
+

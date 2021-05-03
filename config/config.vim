@@ -51,3 +51,4 @@ set clipboard=unnamed
 set lazyredraw
 set termguicolors
 filetype plugin indent on
+
