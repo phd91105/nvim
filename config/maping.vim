@@ -37,3 +37,4 @@ nnoremap <Leader>/ :split<CR>
 nnoremap K :Ag <C-R><C-W><CR>
 nnoremap <C-k> /<C-R><C-W><CR>
 nnoremap \ :Ag<SPACE>
+

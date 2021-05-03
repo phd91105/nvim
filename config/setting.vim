@@ -78,3 +78,9 @@ let g:fzf_colors =
 " Set python3 env path
 let g:python3_host_prog='/usr/local/bin/python3'
 
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
