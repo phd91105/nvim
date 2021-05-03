@@ -4,6 +4,9 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+" Set font mvim
+set guifont=monaco:h19
+
 augroup vimrcEx
   autocmd!
   " When editing a file, always jump to the last known cursor position.
@@ -38,25 +41,15 @@ let g:is_posix = 1
 
 " NERD tree configuration
 let NERDTreeShowHidden=1
-let g:NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeIgnore = ['^node_modules$','^.DS_Store$']
 let g:NERDTreeGitStatusWithFlags = 1
 
-" Lightline
-let g:lightline = {
-      \ 'colorscheme': 'darcula',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
-      \   'right': [ [ 'lineinfo', 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
+" airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_powerline_fonts = 1
 
 " fzf.vim
 " Customize fzf colors to match your color scheme

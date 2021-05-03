@@ -44,3 +44,11 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+
+" Tab navigation
+noremap U :bnext<CR>
+noremap Y :bprevious<CR>
+
+" Save file
+noremap <C-s> :w<CR>
+
