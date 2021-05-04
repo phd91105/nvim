@@ -6,7 +6,7 @@ endif
 
 " terminal configuration
 autocmd TermOpen * startinsert
-autocmd FileType text setlocal textwidth=0
+autocmd FileType * setlocal textwidth=0
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
