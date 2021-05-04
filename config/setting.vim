@@ -4,6 +4,10 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+" terminal configuration
+autocmd TermOpen * startinsert
+autocmd FileType text setlocal textwidth=0
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -16,27 +20,39 @@ let NERDTreeShowHidden=1
 let g:NERDTreeIgnore = ['^node_modules$','^.DS_Store$']
 let g:NERDTreeGitStatusWithFlags = 1
 
-" airline config
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#formatter = 'unique_tail'
-"let g:airline_powerline_fonts = 1
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'darcula',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo', 'percent' ],
+      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head',
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
 
 " fzf.vim
 " Customize fzf colors to match your color scheme
-"let g:fzf_colors =
-"\ { 'fg':      ['fg', 'Normal'],
-  "\ 'bg':      ['bg', 'Normal'],
-  "\ 'hl':      ['fg', 'Comment'],
-  "\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  "\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  "\ 'hl+':     ['fg', 'Statement'],
-  "\ 'info':    ['fg', 'PreProc'],
-  "\ 'border':  ['fg', 'Ignore'],
-  "\ 'prompt':  ['fg', 'Conditional'],
-  "\ 'pointer': ['fg', 'Exception'],
-  "\ 'marker':  ['fg', 'Keyword'],
-  "\ 'spinner': ['fg', 'Label'],
-  "\ 'header':  ['fg', 'Comment'] }
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " Set python3 env path
 "let g:python3_host_prog='/usr/local/bin/python3'

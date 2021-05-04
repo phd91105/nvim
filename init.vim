@@ -5,6 +5,7 @@ function! s:InstallVimPlug()
       autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
 endfunction
+call s:InstallVimPlug()
 
 for f in split(glob('~/.config/nvim/config/*.vim'), '\n')
   exe 'source' f
