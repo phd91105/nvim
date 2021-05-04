@@ -101,7 +101,7 @@ export EDITOR='nvim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi='nvim'
 alias cm='git add . && git commit -m'
-alias tm='tmux a -t 0'
+alias tm='tmux a'
 alias reload='source ~/.zshrc'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
