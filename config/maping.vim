@@ -39,7 +39,6 @@ nnoremap <C-k> /<C-R><C-W><CR>
 nnoremap \ :Ag<SPACE>
 
 " Auto close tags
-inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
@@ -54,8 +53,4 @@ noremap <C-s> :w<CR>
 
 " CocCommand
 noremap <leader>. :CocCommand eslint.showOutputChannel<CR>
-
-" Tab
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
 
