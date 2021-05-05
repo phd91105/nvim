@@ -55,5 +55,7 @@ noremap <C-s> :w<CR>
 " CocCommand
 noremap <leader>. :CocCommand eslint.showOutputChannel<CR>
 
-nnoremap <silent> <F3> :split +resize10 term://zsh <CR>
-tnoremap <silent> <F3> <C-\><C-n> :bd! <CR>
+" Tab
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
+
