@@ -33,18 +33,10 @@ nnoremap <Leader>/ :split<CR>
 " bind \ (backward slash) to grep shortcut
 nnoremap K :Ag <C-R><C-W><CR>
 nnoremap <C-k> /<C-R><C-W><CR>
-nnoremap \ :Ag<SPACE>
-" Auto close tags inoremap ' ''<left> inoremap ( ()<left> inoremap { {}<left>
-
-" Tab navigation
-noremap U :bnext<CR>
-noremap Y :bprevious<CR>
+nnoremap / :Ag<SPACE>
 
 " Save file
 noremap <C-s> :w<CR>
-
-" CocCommand
-noremap <leader>. :CocCommand eslint.showOutputChannel<CR>
 
 " Use tab with text block
 vmap <Tab> >gv
@@ -52,8 +44,8 @@ vmap <S-Tab> <gv
 
 " Easymotion
 " s{char}{char} to move to {char}{char} over windows
-nmap <Leader>F <Plug>(easymotion-overwin-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
 " Move to line over windows
-nmap <Leader>L <Plug>(easymotion-overwin-line)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
 " Search n-chars
-map / <Plug>(easymotion-sn)
+map \ <Plug>(easymotion-sn)

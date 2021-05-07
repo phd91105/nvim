@@ -5,7 +5,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " terminal configuration
-autocmd TermOpen * startinsert
+"autocmd TermOpen * startinsert
 autocmd FileType * setlocal textwidth=0
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
@@ -25,7 +25,7 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo', 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \              [ 'ileformat', 'fileencoding', 'filetype' ] ]
       \ },
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' },
