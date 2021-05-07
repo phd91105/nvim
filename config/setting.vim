@@ -8,9 +8,6 @@ endif
 autocmd TermOpen * startinsert
 autocmd FileType * setlocal textwidth=0
 
-" Prettier
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
 " shell for syntax highlighting purposes.
 let g:is_posix = 1
@@ -19,6 +16,7 @@ let g:is_posix = 1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git', 'node_modules', 'venv']
 let g:NERDTreeGitStatusWithFlags = 1
+
 
 " Lightline
 let g:lightline = {

@@ -9,6 +9,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'easymotion/vim-easymotion'
+  Plug 'ervandew/supertab'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-fugitive'
+  Plug 'dracula/vim'
   "Plug 'vimsence/vimsence'
 call plug#end()
 

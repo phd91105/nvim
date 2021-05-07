@@ -1,4 +1,10 @@
 {
   "suggest.noselect": false,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript"]
 }

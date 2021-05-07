@@ -1,6 +1,3 @@
-" Prettier map
-nnoremap <leader>f :Prettier<CR>
-
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
@@ -37,11 +34,7 @@ nnoremap <Leader>/ :split<CR>
 nnoremap K :Ag <C-R><C-W><CR>
 nnoremap <C-k> /<C-R><C-W><CR>
 nnoremap \ :Ag<SPACE>
-
-" Auto close tags
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap { {}<left>
+" Auto close tags inoremap ' ''<left> inoremap ( ()<left> inoremap { {}<left>
 
 " Tab navigation
 noremap U :bnext<CR>
@@ -53,3 +46,14 @@ noremap <C-s> :w<CR>
 " CocCommand
 noremap <leader>. :CocCommand eslint.showOutputChannel<CR>
 
+" Use tab with text block
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
+" Easymotion
+" s{char}{char} to move to {char}{char} over windows
+nmap <Leader>F <Plug>(easymotion-overwin-f)
+" Move to line over windows
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+" Search n-chars
+map / <Plug>(easymotion-sn)
