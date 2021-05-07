@@ -41,7 +41,6 @@ nnoremap \ :Ag<SPACE>
 " Auto close tags
 inoremap ' ''<left>
 inoremap ( ()<left>
-inoremap [ []<left>
 inoremap { {}<left>
 
 " Tab navigation

@@ -19,8 +19,6 @@ let g:is_posix = 1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git', 'node_modules', 'venv']
 let g:NERDTreeGitStatusWithFlags = 1
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Lightline
 let g:lightline = {
