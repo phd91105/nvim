@@ -2,9 +2,7 @@
   "suggest.noselect": false,
   "eslint.filetypes": [
     "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
+    "typescript"
   ],
   "coc.preferences.formatOnSaveFiletypes": ["typescript", "javascript"]
 }

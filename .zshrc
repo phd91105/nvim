@@ -103,6 +103,6 @@ alias vi='nvim'
 alias cm='git add . && git commit -m'
 alias tm='tmux a'
 alias reload='source ~/.zshrc'
-alias gsync="git checkout master && git fetch upstream && git rebase upstream/master && git push"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
