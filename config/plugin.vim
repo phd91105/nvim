@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'dracula/vim'
-  Plug 'wakatime/vim-wakatime'
   Plug 'preservim/nerdcommenter'
   Plug 'itchyny/lightline.vim'
   Plug 'junegunn/fzf.vim'
